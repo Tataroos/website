@@ -1,1 +1,0 @@
-<img src="images" alt="Dynamic Image" width="100" height="100" />
