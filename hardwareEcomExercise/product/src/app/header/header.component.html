@@ -1,0 +1,27 @@
+<header class="main-header">
+  <div class="header-content">
+    
+    <a routerLink="/" class="logo-link">
+      <!-- 
+<!-- TODO: Replace with hardware store image -->
+<!-- Suggested: /assets/images/tools/hammer.png -->
+<img src="assets/images/hardware-logo.png" alt="Hardware Store Shop Logo" class="logo-image"> -->
+      <span class="logo-text">Prosumer Brew</span>
+    </a>
+
+    <span class="tagline">Your Home Barista Hub!</span>
+
+    <nav class="main-nav">
+      <ul>
+        <li *ngFor="let menu of menus"> 
+          <a routerLink="/{{menu.routerPath}}" 
+             routerLinkActive="active-link" 
+             [routerLinkActiveOptions]="{exact: menu.routerPath === ''}">
+            {{ menu.name }}
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
