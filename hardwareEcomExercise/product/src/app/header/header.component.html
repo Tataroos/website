@@ -1,0 +1,24 @@
+<header class="main-header">
+  <div class="header-content">
+    
+    <a routerLink="/" class="logo-link">
+      <!-- <img src="assets/images/coffee-logo.png" alt="Coffee Prosumer Shop Logo" class="logo-image"> -->
+      <span class="logo-text">Eyes Hardware</span>
+    </a>
+
+    <span class="tagline">Your Construction Hub!</span>
+
+    <nav class="main-nav">
+      <ul>
+        <li *ngFor="let menu of menus"> 
+          <a routerLink="/{{menu.routerPath}}" 
+             routerLinkActive="active-link" 
+             [routerLinkActiveOptions]="{exact: menu.routerPath === ''}">
+            {{ menu.name }}
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>

@@ -1,0 +1,44 @@
+* {
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+
+.main-footer {
+  background-color: #fef9c3; 
+  color: #b91c1c;
+  padding: 20px 0; 
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-nav {
+  margin-top: 10px;
+}
+
+.footer-nav a {
+  color: #b91c1c; /* Changed from #f0e9e4 */
+  text-decoration: none;
+  margin: 0 10px; 
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: #991b1b; /* Changed from #ffffff */
+}
+
+.footer-nav a.disabled-link {
+  color: #fca5a5; /* Changed from #8a817c */
+  cursor: default; 
+  pointer-events: none;
+}
+
+.footer-nav a.disabled-link:hover {
+  color: #fca5a5; /* Changed from #8a817c */
+}
